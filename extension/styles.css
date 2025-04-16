@@ -1,0 +1,10 @@
+.rocket-emoji {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.rocket-emoji:hover {
+  transform: scale(1.2);
+}
+
+/* Add any additional styles for the tweet analysis results if needed */ 

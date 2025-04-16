@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "AXIOM Tweet Analyzer",
+  "version": "1.0",
+  "description": "Analyzes tweets from AXIOM Pro using Gemini AI",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.axiom.trade/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.axiom.trade/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html"
+}

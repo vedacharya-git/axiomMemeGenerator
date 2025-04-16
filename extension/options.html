@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AXIOM Tweet Analyzer Options</title>
+  <style>
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .save-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .save-button:hover {
+      background-color: #45a049;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      display: none;
+    }
+    .success {
+      background-color: #dff0d8;
+      color: #3c763d;
+    }
+    .error {
+      background-color: #f2dede;
+      color: #a94442;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AXIOM Tweet Analyzer Settings</h1>
+    
+    <div class="form-group">
+      <label for="serverUrl">Server URL:</label>
+      <input type="text" id="serverUrl" placeholder="http://localhost:3000">
+      <p>Enter the URL of your analysis server. Make sure to include the protocol (http:// or https://).</p>
+    </div>
+
+    <button id="save" class="save-button">Save</button>
+    <div id="status" class="status"></div>
+
+    <div class="setup-instructions">
+      <h2>Setup Instructions</h2>
+      <ol>
+        <li>Set up your own server using the code from: [Your Repository URL]</li>
+        <li>Get a Gemini API key from Google AI Studio</li>
+        <li>Configure your server with the API key</li>
+        <li>Enter your server URL above</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html> 
