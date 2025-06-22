@@ -87,7 +87,7 @@ A Chrome extension that enhances Axiom Trade by adding a rocket emoji (🚀) to 
 
 MIT License - Feel free to use and modify as needed.
 
-## Security
+## Security (stuff you sometimes miss and learn the hard way)
 
 - Never commit your `.env` file
 - Keep your API keys secure
