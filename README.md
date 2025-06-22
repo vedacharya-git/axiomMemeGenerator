@@ -1,6 +1,7 @@
 # Axiom Trade Meme Token Generator
 
 A Chrome extension that enhances Axiom Trade by adding a rocket emoji (🚀) to tweets, which when clicked, generates creative meme token names and tickers using Google's Gemini AI.
+`<This was a Chrome extension built for a fellow Discord mate>`
 
 ## Features
 
